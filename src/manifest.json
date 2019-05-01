@@ -4,7 +4,8 @@
     "description": "Small chrome extension to explore onSuspend event",
     "version": "0.0.1",
     "background": {
-        "page": "background.js",
+        "scripts": [ "background.js" ],
         "persistent": false
-    }
+    },
+    "permissions": ["storage"]
 }
