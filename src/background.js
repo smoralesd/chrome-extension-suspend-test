@@ -9,5 +9,5 @@ chrome.runtime.onSuspend.addListener(() => {
     console.log('onSuspend');
     chrome.storage.local.set({
         'suspended-on': new Date().toString()
-    }, () => console.log('suspended-on to local storage success'));
+    });
 });
